@@ -3,6 +3,7 @@ flowchart TD
     start@{shape: circle}
     inputArray1@{ shape: lean-r, label: "Input: const hasilUjianJohn = [75, 80, 79, 90]"}
     inputArray2@{ shape: lean-r, label: "Input: const hasilUjianEd = [66, 77, 88, 99]"}
+    gabungan@{ label: "gabunganHasilUjian = hasilUjianJohn + hasilUjianEd"}
     proses@{ label: "let a = 0
     let terbesar = gabunganHasilUjian[0]
     let terkecil = gabunganHasilUjian[0]
@@ -21,8 +22,7 @@ flowchart TD
     output3@{ shape: lean-r, label: "Output: terkecil"}
     stop@{ shape: dbl-circ}
 
-start-->inputArray1-->inputArray2-->proses
-proses-->for1-->for2--true-->a
+start-->inputArray1-->inputArray2-->gabungan-->proses-->for1-->for2--true-->a
 a-->if1--true-->if1true-->iterasi
 if1--false-->if2--true-->if2true-->iterasi
 if2--false-->iterasi
