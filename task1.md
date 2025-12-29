@@ -1,12 +1,12 @@
 ```mermaid
 flowchart TD
     start@{shape: circle}
-    inputArray1@{ shape: lean-r, label: "Input: const hasilUjianJohn = [75, 80, 79, 90]"}
-    inputArray2@{ shape: lean-r, label: "Input: const hasilUjianEd = [66, 77, 88, 99]"}
+    inputArray1@{ shape: lean-r, label: "Input: hasilUjianJohn = [75, 80, 79, 90]"}
+    inputArray2@{ shape: lean-r, label: "Input: hasilUjianEd = [66, 77, 88, 99]"}
     gabungan@{ label: "gabunganHasilUjian = hasilUjianJohn + hasilUjianEd"}
-    proses@{ label: "let a = 0
-    let terbesar = gabunganHasilUjian[0]
-    let terkecil = gabunganHasilUjian[0]
+    proses@{ label: "a = 0
+    terbesar = gabunganHasilUjian[0]
+    terkecil = gabunganHasilUjian[0]
     "}
     for1@{ label: "i = 0"}
     for2@{ shape: diamond, label: "i <= gabunganHasilUjian.length-1"}
