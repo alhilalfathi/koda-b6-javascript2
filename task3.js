@@ -2,15 +2,13 @@ const temperature = {
     base: 10,
     toFahrenheit: function(){
         // console.log(`${this.base}`)
-        return `${this.base}` * (9/5) + 32
+        return this.base * (9/5) + 32
     },
     toKelvin: function(){
-        baseString = `${this.base}`
-        baseNumber = Number(baseString)
-        return baseNumber + 273.15
+        return this.base + 273.15
     },
     toReamur: function(){
-        return baseNumber * (4/5)
+        return this.base * (4/5)
     }
 }
 console.log(temperature.base)
