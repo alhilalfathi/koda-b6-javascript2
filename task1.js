@@ -9,7 +9,7 @@ let terbesar = gabunganHasilUjian[0]
 let terkecil = gabunganHasilUjian[0]
 
 for (i=0;i<=gabunganHasilUjian.length-1;i++){
-    // console.log(gabunganHasilUjian[i])
+    
     a = a + gabunganHasilUjian[i]
     if(gabunganHasilUjian[i]>terbesar){
         terbesar = gabunganHasilUjian[i]
