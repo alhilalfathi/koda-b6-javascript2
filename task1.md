@@ -25,6 +25,7 @@ start-->inputArray1-->inputArray2-->proses
 proses-->for1-->for2--true-->a
 a-->if1--true-->if1true-->iterasi
 if1--false-->if2--true-->if2true-->iterasi
+if2--false-->iterasi
 iterasi--->for2--false-->rata
-rata-->output1-->output2-->output3
+rata-->output1-->output2-->output3-->stop
 ```
